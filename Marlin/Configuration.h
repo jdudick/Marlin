@@ -489,9 +489,9 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Hemera
-  #define DEFAULT_Kp 22.47
-  #define DEFAULT_Ki 1.54
-  #define DEFAULT_Kd 81.95
+  #define DEFAULT_Kp 16.00
+  #define DEFAULT_Ki 1.16
+  #define DEFAULT_Kd 54.90
   
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -786,7 +786,7 @@
  *   M204 R    Retract Acceleration
  *   M204 T    Travel Acceleration
  */
-#define DEFAULT_ACCELERATION          1000    // X, Y, Z and E acceleration for printing moves
+#define DEFAULT_ACCELERATION          1200   // X, Y, Z and E acceleration for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  1500    // E acceleration for retracts
 #define DEFAULT_TRAVEL_ACCELERATION   1500    // X, Y, Z acceleration for travel (non printing) moves
 
@@ -1012,7 +1012,7 @@
  * A total of 3 or more adds more slow probes, taking the average.
  */
 #define MULTIPLE_PROBING 2
-//#define EXTRA_PROBING    1
+#define EXTRA_PROBING    1
 
 /**
  * Z probes require clearance when deploying, stowing, and moving between
