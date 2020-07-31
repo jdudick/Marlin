@@ -489,9 +489,9 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Hemera
-  #define DEFAULT_Kp 13.53
-  #define DEFAULT_Ki 0.82
-  #define DEFAULT_Kd 55.20
+  #define DEFAULT_Kp 15.43
+  #define DEFAULT_Ki 0.98
+  #define DEFAULT_Kd 60.55
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
