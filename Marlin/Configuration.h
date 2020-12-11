@@ -489,9 +489,9 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Hemera
-  #define DEFAULT_Kp 22.47
-  #define DEFAULT_Ki 1.54
-  #define DEFAULT_Kd 81.95
+  #define DEFAULT_Kp 21.55
+  #define DEFAULT_Ki 1.99
+  #define DEFAULT_Kd 58.30
   
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -751,7 +751,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 390 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 394 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1123,7 +1123,7 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 235
+#define X_BED_SIZE 234
 #define Y_BED_SIZE 225
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
@@ -1504,13 +1504,13 @@
 // Preheat Constants
 #define PREHEAT_1_LABEL       "PLA"
 #define PREHEAT_1_TEMP_HOTEND 195
-#define PREHEAT_1_TEMP_BED     60
+#define PREHEAT_1_TEMP_BED     65
 #define PREHEAT_1_FAN_SPEED   255 // Value from 0 to 255
 
 #define PREHEAT_2_LABEL       "PETG"
 #define PREHEAT_2_TEMP_HOTEND 230
-#define PREHEAT_2_TEMP_BED     80
-#define PREHEAT_2_FAN_SPEED   102 // Value from 0 to 255
+#define PREHEAT_2_TEMP_BED     65
+#define PREHEAT_2_FAN_SPEED   51 // Value from 0 to 255
 
 /**
  * Nozzle Park
@@ -1776,7 +1776,7 @@
 // If you have a speaker that can produce tones, enable it here.
 // By default Marlin assumes you have a buzzer with a fixed frequency.
 //
-#define SPEAKER
+//#define SPEAKER
 
 //
 // The duration and frequency for the UI feedback sound.
