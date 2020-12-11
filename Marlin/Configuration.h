@@ -489,9 +489,9 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Hemera
-  #define DEFAULT_Kp 15.43
-  #define DEFAULT_Ki 0.98
-  #define DEFAULT_Kd 60.55
+  #define DEFAULT_Kp 16.76
+  #define DEFAULT_Ki 1.12
+  #define DEFAULT_Kd 62.92
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -751,7 +751,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 390 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 394 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1123,7 +1123,7 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 327
+#define X_BED_SIZE 325
 #define Y_BED_SIZE 330
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
@@ -1504,13 +1504,13 @@
 // Preheat Constants
 #define PREHEAT_1_LABEL       "PLA"
 #define PREHEAT_1_TEMP_HOTEND 195
-#define PREHEAT_1_TEMP_BED     60
+#define PREHEAT_1_TEMP_BED     65
 #define PREHEAT_1_FAN_SPEED   255 // Value from 0 to 255
 
 #define PREHEAT_2_LABEL       "PETG"
 #define PREHEAT_2_TEMP_HOTEND 230
-#define PREHEAT_2_TEMP_BED     80
-#define PREHEAT_2_FAN_SPEED   102 // Value from 0 to 255
+#define PREHEAT_2_TEMP_BED     65
+#define PREHEAT_2_FAN_SPEED   51 // Value from 0 to 255
 
 /**
  * Nozzle Park
@@ -1527,7 +1527,7 @@
 
 #if ENABLED(NOZZLE_PARK_FEATURE)
   // Specify a park position as { X, Y, Z_raise }
-  #define NOZZLE_PARK_POINT { (X_MAX_POS - 10), (Y_MIN_POS + 10), 20 }
+  #define NOZZLE_PARK_POINT { (X_MAX_POS - 10), (Y_MIN_POS + 2), 20 }
   //#define NOZZLE_PARK_X_ONLY          // X move only is required to park
   //#define NOZZLE_PARK_Y_ONLY          // Y move only is required to park
   #define NOZZLE_PARK_Z_RAISE_MIN   2   // (mm) Always raise Z by at least this distance
